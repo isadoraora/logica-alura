@@ -1,0 +1,61 @@
+<meta charset="utf-8">
+
+<script>
+	function pulaLinha(){
+		document.write("<br><hr><br>");
+	}
+	function  mostra(frase) {
+		document.write("<big>" + frase + "</big>");
+		pulaLinha();
+	}
+	var ano = 2020;
+	mostra("Eu nascei em: " +(ano - 31));
+	mostra("Pedro nasceu em: " +(ano - 33));
+	   function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+    }
+
+    function calculaImc(altura, peso) {
+
+        return peso / ( altura * altura );
+    }
+      mostra("O meu IMC é " + calculaImc(1.63, 48));
+          function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function a(texto) {
+
+        return "(" + texto + ")";
+    }
+
+    function b(texto) {
+
+        return "@" + texto + "@";
+    }
+
+    function c(nome, sobrenome) {
+
+        return b(nome + " " + a(sobrenome));
+
+    }
+
+    var resultado = c("Flávio", "Almeida");
+
+    mostra(resultado);
+    var a = parseInt("10");
+	var b = parseInt("Calopsita");
+	var c = parseInt(10);
+	document.write(a,b,c);
+
+</script>

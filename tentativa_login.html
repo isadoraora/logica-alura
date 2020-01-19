@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<script>
+	var loginCad = "isa";
+	var senhaCad = "isaisa";
+
+	var maximoTent = 3;
+	var tentativa =1;
+
+	while(tentativa <=maximoTent){
+		var loginInfo = prompt("Dga seu login");
+		var senhaInfo = prompt("Diga sua senha");
+		if (loginCad==loginInfo && senhaCad == senhaInfo) {
+			alert("Bembindo" +loginInfo)
+			tentativa = maximoTent;
+		}else{
+			if(tentativa == 3){
+				alert("Muitas tentativas");
+			}else{
+				alert("login invalido");
+			}
+		}
+		tentativa++;
+	}
+</script>
